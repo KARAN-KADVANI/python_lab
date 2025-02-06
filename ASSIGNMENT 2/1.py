@@ -4,10 +4,12 @@ a=""# initialising empty string.
 
 
 for i in range(len(word)):#loop for traverse through all characters 
-    if i%2==0:#for even index charaters 
-        a+=word[i].lower()#lower case letter 
+    if i%2!=0:#for even index charaters 
+        a+=word[i].upper()#lower case letter 
+
     else:
-        a+=word[i].upper()#upper case letter 
+        a+=word[i]
+    
 
 print(a)#printing the string.
     
