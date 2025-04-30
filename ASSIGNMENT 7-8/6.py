@@ -1,3 +1,6 @@
+'''Create a class "BankAccount" with attributes account number and balance. Implement
+methods to deposit and withdraw funds, and a display method to show the account details.'''
+
 class BankAccount:
     def __init__(self, account_number, balance=0.0):
         self.account_number = account_number

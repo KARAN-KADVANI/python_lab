@@ -1,3 +1,8 @@
+'''Create a tokenizer for your own language (mother tongue you speak). The tokenizer should
+tokenize punctuations, dates, urls, emails, numbers (in all different forms such as “33.15”,
+“3,22,243”, “313/77”), social media usernames/user handles. Use regular expressions to design
+this.'''
+
 import re
 
 def tokenize(text):

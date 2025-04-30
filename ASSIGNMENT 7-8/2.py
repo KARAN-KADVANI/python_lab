@@ -1,3 +1,6 @@
+# Write a Python program to create a class representing a queue data structure. Include methods
+# for enqueueing and dequeuing elements.
+
 class Queue:
     def __init__(self):
         self.queue = []

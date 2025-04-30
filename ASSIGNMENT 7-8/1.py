@@ -1,23 +1,30 @@
+# Write a Python program to create a class representing a linked list data structure. Include
+# methods for displaying linked list data, inserting and deleting nodes.
+
 class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+    def __init__(self,data):
+        self.data=data
+        self.next=None 
 
 class LinkedList:
     def __init__(self):
-        self.head = None
+        self.head=None
 
-    def insert_at_end(self, data):
-        new_node = Node(data)
+    def insert_at_end(self,data):
+        new_node=Node(data)
+
         if not self.head:
-            self.head = new_node
-            return
-        temp = self.head
-        while temp.next:
-            temp = temp.next
-        temp.next = new_node
+            self.head=new_node
 
-    def insert_at_beginning(self, data):
+        temp=self.head
+        while temp.next:
+            temp=temp.next
+
+        temp.next=new_node
+        new_node.next=None
+
+
+    def insert_at_beginning(self,data):
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
@@ -36,7 +43,7 @@ class LinkedList:
             temp = temp.next
 
         if not temp:
-            print("Node with value", key, "not found.")
+            print("Node with value", key , "not found.")
             return
 
         prev.next = temp.next

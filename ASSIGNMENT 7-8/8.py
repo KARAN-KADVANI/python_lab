@@ -1,3 +1,11 @@
+'''Decode the message:
+A message containing the letters from A-Z can be encoded into the numbers using the mapping
+A-> 1, B-> 2, C-> 3, ..., Z-> 26. To decode an encoded message, you need to group the digits
+and do the reverse mapping. You are required to display all the possible decoded messages.
+For example: "11106" can be decoded into:
+a. "AAJF" with the grouping (1 1 10 6)
+b. "KJF" with the grouping (11 10 6)'''
+
 def decode_message(encoded, index=0, current_decoding="", result=None):
     if result is None:
         result = []

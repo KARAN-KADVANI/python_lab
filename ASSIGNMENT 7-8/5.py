@@ -1,3 +1,7 @@
+# Create a base class "Shape" with methods to calculate the area and perimeter. Implement
+# derived classes "Rectangle" and "Circle" that inherit from "Shape" and provide their own area
+# and perimeter calculations.
+
 import math
 
 class Shape:

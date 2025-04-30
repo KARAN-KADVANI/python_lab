@@ -1,3 +1,6 @@
+# Create a class "Employee" with attributes name and salary. Implement overloaded operators +
+# and - to combine and compare employees based on their salaries.
+
 class Employee:
     def __init__(self, name, salary):
         self.name = name
